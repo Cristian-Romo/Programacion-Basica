@@ -13,3 +13,4 @@ int main() {
 
     return 0;
 }
+/*En c se usan 2 librerias un Math para sacar la raiz cuadrada pero se necesita muchas lineas de codigo*/

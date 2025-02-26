@@ -6,4 +6,4 @@ if edad >= 18:
 else:
     print("Eres menor de edad.")
 
-    ##Python usa menos lineas de codigo
+    ##Python usa menos lineas de codigo y no declara sus variables

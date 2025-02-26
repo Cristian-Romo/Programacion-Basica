@@ -17,3 +17,4 @@ int main() {
 
     return 0;
 }
+/*En c se declara todos los tipos de datos para imprimirlos con muchas lineas de codigo*/

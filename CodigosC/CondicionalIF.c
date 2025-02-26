@@ -16,4 +16,4 @@ int main() {
 
     return 0;
 }
-/*En c se usan mas caracteres especiales y se declaran las variables*/
+/*En c se usan mas caracteres especiales y se declaran las variables, lo compara con 3 funciones y una esta combinada */

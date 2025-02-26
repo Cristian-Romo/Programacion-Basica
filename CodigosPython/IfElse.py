@@ -10,3 +10,4 @@ elif numero < 0:
     print("El número es negativo.")
 else:
     print("El número es cero.")
+    ##Python usa variables sin declarar para usar en 3 funciones y una esta combinada de 2

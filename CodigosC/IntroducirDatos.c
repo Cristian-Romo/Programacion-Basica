@@ -16,3 +16,4 @@ int main() {
 
     return 0;
 }
+/*En c se declaran las variables con INT y las guarda con scanf y los suma*/
