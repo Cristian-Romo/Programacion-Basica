@@ -17,10 +17,10 @@ El lenguaje de alto nivel es más fácil leerlo para nosotros y el de bajo nivel
 
 **Operadores**
 1. IF
-'if opcion == "1":
+' if opcion == "1":
         tarea = input("📝 Escribe la nueva tarea: ")
         tareas.append(tarea)
-        print(f"✅ Tarea '{tarea}' agregada.")'
+        print(f"✅ Tarea '{tarea}' agregada.") '
 2. Else
 'else:
             num = int(input("🔹 Número de la tarea completada: ")) - 1'
