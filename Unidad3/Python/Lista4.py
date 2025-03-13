@@ -22,5 +22,8 @@ Materias.remove("Programacion Basica")
 print(Materias)
 Materias.append("Programacion Avanzada")
 
-Materias.append("Programacion Basica")
+Materias.insert(1, "Programacion Basica")
 print(Materias)
+
+for Materia in Materias:
+    print(Materia)
