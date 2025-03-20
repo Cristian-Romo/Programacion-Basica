@@ -1,5 +1,6 @@
 import datetime
 import random
+import csv
 
 # Diccionarios para almacenar empleados y productos
 empleados = {}
