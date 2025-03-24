@@ -15,7 +15,9 @@ def imprimir_menu():
     print("4. Agregar Producto")
     print("5. Eliminar Producto")
     print("6. Imprimir Lista de Productos")
-    print("7. Salir")
+    print("7. Guardar Lista CSV")
+    print("8. Leer Lista CSV")
+    print("9. Salir")
 
 # Función para agregar un empleado
 def agregar_empleado():
@@ -89,6 +91,15 @@ def main():
         elif opcion == "6":
             imprimir_productos()
         elif opcion == "7":
+            from ImportarLibreria import guardar_diccionarios_en_csv
+            archivo = "datos.csv"
+
+        elif opcion == "8":
+            from ImportarLibreria import leer_diccionarios_de_csv
+            datos_leidos = leer_diccionarios_de_csv(empleados, productos)
+            print("Datos leídos del archivo CSV:")
+            print(datos_leidos)
+        elif opcion == "9":
             print("Saliendo del programa...")
             break
         else:
