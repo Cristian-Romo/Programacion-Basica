@@ -1,6 +1,5 @@
 import datetime
 import random
-import csv
 
 # Diccionarios para almacenar empleados y productos
 empleados = {}
@@ -92,13 +91,12 @@ def main():
             imprimir_productos()
         elif opcion == "7":
             from ImportarLibreria import guardar_diccionarios_en_csv
-            archivo = "datos.csv"
-
+            guardar_diccionarios_en_csv(empleados, "empleados.csv")
+            guardar_diccionarios_en_csv(productos, "productos.csv")
         elif opcion == "8":
             from ImportarLibreria import leer_diccionarios_de_csv
-            datos_leidos = leer_diccionarios_de_csv(empleados, productos)
-            print("Datos leídos del archivo CSV:")
-            print(datos_leidos)
+            empleados = leer_diccionarios_de_csv("empleados.csv")
+            productos = leer_diccionarios_de_csv("productos.csv")
         elif opcion == "9":
             print("Saliendo del programa...")
             break
