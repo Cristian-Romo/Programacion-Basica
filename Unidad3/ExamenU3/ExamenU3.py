@@ -1,5 +1,6 @@
 import datetime
 import random
+from ImportarLibreria import guardar_diccionarios_en_csv, leer_diccionarios_de_csv
 
 # Diccionarios para almacenar empleados y productos
 empleados = {}
@@ -71,6 +72,14 @@ def imprimir_productos():
     else:
         print("No hay productos registrados.")
 
+def guardar_diccionarios_en_csv():
+    guardar_diccionarios_en_csv(empleados, "empleados.csv")
+    guardar_diccionarios_en_csv(productos, "productos.csv")
+
+def leer_diccionarios_en_csv():
+    empleados = leer_diccionarios_de_csv("empleados.csv")
+    productos = leer_diccionarios_de_csv("productos.csv")
+
 # Programa principal
 def main():
     while True:
@@ -90,13 +99,9 @@ def main():
         elif opcion == "6":
             imprimir_productos()
         elif opcion == "7":
-            from ImportarLibreria import guardar_diccionarios_en_csv
-            guardar_diccionarios_en_csv(empleados, "empleados.csv")
-            guardar_diccionarios_en_csv(productos, "productos.csv")
+            guardar_diccionarios_en_csv()
         elif opcion == "8":
-            from ImportarLibreria import leer_diccionarios_de_csv
-            empleados = leer_diccionarios_de_csv("empleados.csv")
-            productos = leer_diccionarios_de_csv("productos.csv")
+            leer_diccionarios_en_csv()
         elif opcion == "9":
             print("Saliendo del programa...")
             break
