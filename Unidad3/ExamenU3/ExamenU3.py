@@ -1,7 +1,9 @@
 import datetime
 import random
+import time
 from ImportarLibreria import guardar_diccionarios_en_csv, leer_diccionarios_de_csv
 
+tic = time.perf_counter()
 # Diccionarios para almacenar empleados y productos
 empleados = {}
 productos = {}
@@ -107,6 +109,6 @@ def main():
             break
         else:
             print("Opcion no valida. Por favor seleccione una opción del 1 al 7.")
-
+    toc = time.perf_counter()
 if __name__ == "__main__":
     main()
