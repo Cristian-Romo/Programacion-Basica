@@ -3,7 +3,7 @@ import random
 import time
 from ImportarLibreria import guardar_diccionarios_en_csv, leer_diccionarios_de_csv
 
-tic = time.perf_counter()
+
 # Diccionarios para almacenar empleados y productos
 empleados = {}
 productos = {}
@@ -84,6 +84,7 @@ def leer_diccionarios_en_csv():
 
 # Programa principal
 def main():
+    tic = time.perf_counter()
     while True:
         imprimir_menu()
         opcion = input("Seleccione una opción: ")
@@ -110,5 +111,6 @@ def main():
         else:
             print("Opcion no valida. Por favor seleccione una opción del 1 al 7.")
     toc = time.perf_counter()
+    print(f"El codigo ha sido impreso en {toc - tic:0.4f} segundos")
 if __name__ == "__main__":
     main()
